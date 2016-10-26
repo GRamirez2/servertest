@@ -9,10 +9,10 @@ function handleRequest(request, response){
 }
 
 //Create a server
-var server = http.createServer(handleRequest);
+var server1 = http.createServer(handleRequest);
 
 //Lets start our server
-server.listen(PORT, function(){
+server1.listen(PORT, function(){
     //Callback triggered when server is successfully listening. Hurray!
     console.log('Something good about yourself');
     console.log("Server listening on: http://localhost:%s", PORT);
@@ -26,9 +26,9 @@ function handleRequest2(request, response){
     
 
 }
-var server = http.createServer(handleRequest2);
+var server2 = http.createServer(handleRequest2);
 
-server.listen(PORT2, function(){
+server2.listen(PORT2, function(){
     //Callback triggered when server is successfully listening. Hurray!
     console.log('Something bad about yourself');
     console.log("Server listening on: http://localhost:%s", PORT2);
